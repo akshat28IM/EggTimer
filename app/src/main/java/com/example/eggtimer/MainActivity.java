@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
 
         timerSeekBar.setMax(600);//in seconds
-        timerSeekBar.setProgress(0);
+        timerSeekBar.setProgress(60);
 
         timerSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -98,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void  resetTimer(){
-        timerSeekBar.setProgress(0);
+        timeText.setText("01:00");
+        timerSeekBar.setProgress(60);
         timerSeekBar.setEnabled(true);
         countDownTimer.cancel();
         button.setText("START");

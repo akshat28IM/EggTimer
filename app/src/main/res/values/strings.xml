@@ -2,5 +2,5 @@
     <string name="app_name">EggTimer</string>
     <string name="start">START</string>
     <string name="eggimage">eggimage</string>
-    <string name="timeHint">03:30</string>
+    <string name="timer">01:00</string>
 </resources>
